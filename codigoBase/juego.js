@@ -29,7 +29,7 @@ Juego.prototype.addEntidad = function(entidad) {
 };
 
 Juego.prototype.dibujar = function() {
-    this.ctx.clearRect(0, 0, this.ancho, this.alto);
+    this.ctx.clearRect(0, 0, this.ctx.canvas.width, this.ctx.canvas.height);
     this.ctx.save();
     for (var i = 0; i < this.entidades.length; i++) {
         this.entidades[i].dibujar(this.ctx);
