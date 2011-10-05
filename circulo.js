@@ -22,38 +22,30 @@ Circulo.prototype.actualizar = function() {
 
 Circulo.prototype.moveForward = function(){ 
 	if(this.x < this.juego.ctx.canvas.width - this.r)
-		this.x += 3;
-	else{
+		this.x += 2;
+	else
 		this.dirx = false;
-		this.r++;
-	}
 };
 
 Circulo.prototype.moveBackward = function(){
 	if(this.x > 0 + this.r)
-		this.x -= 3;
-	else{
+		this.x -= 2;
+	else
 		this.dirx = true;
-		this.r++;
-	}
 };
 
 Circulo.prototype.moveUp = function(){
 	if(this.y > 0 + this.r)
-		this.y -= 3;
-	else{
+		this.y -= 2;
+	else
 		this.diry = false;
-		this.r++;
-	}
 };
 
 Circulo.prototype.moveDown = function(){
 	if(this.y < this.juego.ctx.canvas.height - this.r)
-		this.y += 3;
-	else{
+		this.y +=2;
+	else
 		this.diry = true;
-		this.r++;
-	}
 };
 
 Circulo.prototype.dibujar = function(ctx) { 
